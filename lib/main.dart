@@ -12,8 +12,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("Welcome To DEPI Student")),
         body: Center(child: Text("Hello DEPI Student")),
+      title: 'Flutter Demo',
+    
+     
+        appBar: AppBar(
+          title: const Text('Flutter Demo Home Page'),
+      
+        ),
+
       ),
     );
   }
