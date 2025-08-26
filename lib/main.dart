@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/screens/home_screen.dart';
+import 'package:weather_app/screens/no_weather_body.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,17 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(child: Text("Hello DEPI Student")),
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-    
-     
-        appBar: AppBar(
-          title: const Text('Flutter Demo Home Page'),
-      
-        ),
-
-      ),
+      home: HomeScreen(),
     );
   }
 }
